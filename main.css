@@ -5,15 +5,11 @@ html {
 }
 
 body {
-  margin: 50;
-  padding: 50;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100vh;
-  background-color: burlywood;
-  z-index: 9000;
-  
-  
-  
+  background: darkred;
 }
 
 .nav {
@@ -37,7 +33,7 @@ li {
 a {
   display: block; /* this makes the actual nav BAR take up space */
   text-decoration: none;
-  color: black;
+  color: #fff;
   text-transform: uppercase;
   font-family: montserrat;
   font-weight: lighter;
@@ -45,32 +41,15 @@ a {
 }
 
 .header {
-  background-image: url("images/coffeeshop.jpg");
-  
-  height: 50vh;
-  width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-}
-
-.header-text h1 {
-  color: black;
-  text-align: center;
-  font-size: 50px;
-  text-align: center;
+  text-align: left;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  
-  
+  top: 25%; 
 }
 
-
+.header h1 {
+  color: #fff;
+  font-size: 400%;
+}
 
 .grid-1 {
   top: 75%;
@@ -78,14 +57,13 @@ a {
   display: grid;
   grid-gap: 50px;
   grid-template-columns: 400px 200px;
-  grid-template-rows: 200px 200px; 
-  
+  grid-template-rows: 100px 200px 200px; 
+  background-color: #2196F3;
   padding: 10px;
   grid-template-areas: 
   'contentArea contentArea contentArea contentArea'
   'aero french pourOver espresso'
   'aero french pourOver espresso';
-  justify-content: center;
 }
 
 .grid-1 > div {
@@ -97,43 +75,24 @@ a {
 
 
 .grid-item1 {
-  
   grid-area: contentArea;
+
 }
 
 .grid-item2 {
-  grid-area: aero;
-  background-image: url(images/aeropress.jpg);
-  background-size: cover;
-  color: #fff;
+  grid-area: aero
+  
 }
 
-  
 .grid-item3 {
-  grid-area: french;
-  background-image: url(images/french.jpg);
-  background-size: cover;
-  color: #fff;
+  grid-area: french
 }
 
 .grid-item4 {
-  grid-area: pourOver;
-  background-image: url(images/pourOver.jpg);
-  background-size: cover;
-  color: #fff;
+  grid-area: pourOver
 }
 
 .grid-item5 {
-  grid-area: espresso;
-  background-image: url(images/espresso.jpg);
-  background-size: cover;
-  color: #fff;
+  grid-area: espresso
 }
 
-@media screen and (max-width: 600px) {
-  .grid-1 {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
