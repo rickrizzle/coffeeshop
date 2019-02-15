@@ -11,27 +11,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/main.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display:400,400i,700" rel="stylesheet"
+    
   </head>
   <body>
     
     <div class="grid-container">
       <div class="header">
         
-        <div class="above-content">
+        <div id="contact" class="above-content">
           <p>Phone: 123-456-7890</p>
           <p><span class="hours">Hours</span></p>
         </div>
 
-        <div class="navbar">
+        <div id="navbar" class="navbar">
             <ul>
-                <li><a href="default.asp">About Us</a></li>
-                <li><a href="news.asp"></a></li>
-                <li><a href="contact.asp">Contact</a></li>
-                <li><a href="about.asp">About</a></li>
+                <li><a href="#contact" u-smooth-scroll="" du-scrollspy="">Contact</a></li>
+                <li><a href="#brewing">Brewing Methods</a></li>
+                <li><a href="#coffee">Our Coffees</a></li>
+                <li><a href="#about">About</a></li>
               </ul>
         </div>
         <h2>Ricky's Java Beans</h2>
-        <div id="values">
+        <div id="about">
           <h3>Our Values</h3>
             Ricky's Java Beans has been serving the community in Rickville for over 27 years. </br>In that time we've made it our mission to deliver the best customer 
             experience </br> and serve the <strong>best</strong> coffee you've ever tasted.
@@ -40,7 +41,7 @@
       
       
 
-      <div class="middle">Our Methods
+      <div id="brewing" class="middle">Our Methods
       
           <p>We use every coffee brewing trick in the book to serve the best coffee for the community. You name it, we got it.</p>
           <ul>
@@ -69,7 +70,7 @@
       </div>  
 
 
-      <div class="bottom">Our Coffees
+      <div id="coffee" class="bottom">Our Coffees
             <p>Ricky's has travelled around the world and brought back the best coffees from every region of the planet. Well, except Antartica. Sorry Penguins.
               Check out our selection below.
             </p>
@@ -102,13 +103,12 @@
       <p>&copy Ricky's Java Beans</p>
       </div>
     </div>
-     
     
-  
+    <!-- scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/main.js"></script>
+    
 
-  
 
-
-    <script src="" async defer></script>
   </body>
 </html>
